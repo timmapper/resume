@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    background-color: #ece5d8;
+    color: #c5c2bd;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* a */
+a {
+    text-decoration: none;
+    color: #c5c2bd;
+    transition: .1s;
+}
+
+a:hover {
+    color: #f8f6f4;
+}
+
+a:active {
+    color: #f8f6f4;
+    border-width: 0 0 4px 0;
+    border-bottom: #f4e3c0;
+    border-style: solid;
+}
+
+a:visited {
+    color: #999998;
+}
+
+a:visited:hover{
+    color: #f8f6f4;    
+}
+
+/*btn*/
+.btn{
+    font-family: inherit;
+    font-size: 24px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #dcd6ca;
+    background-color: #ece5d8;
+    color: #50596b;
+    cursor: pointer;
+    padding: 8px 18px;
+    transition: .1s;
+}
+
+.btn:hover{
+    font-size: 28px;
+    border-color: #f4e3c0;
+    background-color: #495366;
+    color: #f8f6f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ece5d8;
+    margin-bottom: 10px;
+}
+
+.header {
+    background-color: #135ea2;
+    color: #fff;
+    display: flex;
+}
+
+.header img {
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: #ece5d8;
+    border-style: solid;
+    box-shadow: 0px 0px 8px 8px #2d77b4;
+    margin: 20px;
+
+}
+
+.header-text {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+@media (max-width: 550px) {
+    .header {
+        display: block;
+        text-align: center;
+    }
+
+    .header-text {
+        margin: 0;
+    }
+}
+
+.card {
+    background-color: #50596b;
+    border-radius: 1px;
+    border-width: 4px;
+    border-color: #626770;
+    border-style: solid;
+    margin: 12px auto;
+    padding: 10px 25px;
+}
+
+/*list*/
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 8px;
+}
+
+/*table*/
+.table {
+    width: 50%;
+    text-align: left;
+}
+
+.table thead{
+    padding-bottom: 8px;
+}
+
+.table td {
+    padding-bottom: 8px;
+}
+
+.table:last-child {
+    border-bottom: 2px solid #ece5d8;
+}
+
+/*form*/
+.form h2 {
+    text-align: center;
+}
+
+.form-group label{
+    display: block;
+    font-size: 24px;
+}
+
+.form-group input, .form-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-color: #495366;
+    font-size: 18px;
+    color: #f4e3c0;
+    padding: 10px 0;
+    outline: none;
+    border-radius: 1px;
+    font-family: inherit;
+}
